@@ -1,0 +1,211 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.mainDiv {
+    float: left;
+    margin: 0 auto;
+}
+
+#lowerSectionTable {
+    float: left;
+    width: 240px;
+}
+
+#lowerSectionTable div {
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    /*border:1px solid #333;*/
+    color: #fff;
+    font-size: 38px;
+    font-family: calibri;
+    text-align: center;
+}
+
+
+.digit {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.one,
+.eight {
+    background-color: #6f98a8;
+}
+
+.two,
+.four {
+    background-color: #2b8ead;
+}
+
+.three,
+.five,
+.nine {
+    background-color: #2f454e;
+}
+
+.six,
+.seven {
+    background-color: #bfbfbf;
+}
+
+.btn {
+    background-color: #72c3dc;
+    padding: 8px 4px;
+    border-radius: 5px;
+    width: 100px;
+    border: 0px;
+    border-bottom: 3px solid #2b8ead;
+    color: white;
+    font-size: 10px;
+    float: left;
+    clear: both;
+    margin-top: 12px;
+}
+
+.digitSquare {
+    float: left;
+    background-color: #efefef;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-top: inset;
+}
+
+.btn-wrapper.desktop {
+    float: right;
+    margin-left: 20px;
+    display: block;
+}
+
+.mainDiv h3 {
+    text-align: center;
+    font-family: verdana;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+}
+
+.btn-wrapper.mobile {
+    display: none;
+}
+
+.myName {
+    font-size: 8px;
+    font-family: Arial;
+    font-style: italic;
+    clear: both;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+/* mobile css starts */
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mainDiv {
+        float: left;
+        width: 100%;
+    }
+
+    #lowerSectionTable {
+        float: left;
+        width: 100%;
+    }
+
+    #lowerSectionTable div {
+        float: left;
+        height: 19px;
+        width: 89%;
+        padding: 15px;
+        color: #000;
+        font-size: 16px;
+        font-family: calibri;
+        text-align: center;
+        background-color: #efefef;
+        margin-bottom: 3px;
+    }
+
+    .mainDiv h3 {
+        text-align: center;
+        font-family: Calibri;
+        font-size: 28px;
+        font-weight: 200;
+        color: #fff;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        background-color: #333;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .one,
+    .eight {
+        border-left: 10px solid #6f98a8;
+    }
+
+    .two,
+    .four {
+        border-left: 10px solid #2b8ead;
+    }
+
+    .three,
+    .five,
+    .nine {
+        border-left: 10px solid #2f454e;
+    }
+
+    .six,
+    .seven {
+        border-left: 10px solid #bfbfbf;
+    }
+
+    .digitSquare {
+        float: left;
+        background-color: #fff;
+        padding-right: 0px;
+        padding-bottom: 40px;
+        border-top: inset;
+    }
+
+    .btn-wrapper.desktop {
+        display: none;
+    }
+
+    .btn-wrapper.mobile {
+        float: left;
+        margin-left: 0px;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn {
+        clear: none;
+        padding: 15px 4px;
+        float: none;
+        margin-top: 0px;
+        width: 75px;
+    }
+
+    .myName {
+        font-size: 16px;
+    }
+}
+
+/* mobile css ends */
